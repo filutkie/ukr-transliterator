@@ -1,0 +1,12 @@
+html, body {
+  width: 360px;
+}
+
+.content {
+    margin: 15px 30px 15px 30px;
+}
+
+#result-txt {
+  font-size: 18pt;
+  margin: 15px 0px;
+}

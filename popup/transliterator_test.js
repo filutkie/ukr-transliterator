@@ -1,0 +1,60 @@
+var testWords = [
+  ['Алушта', 'Alushta'],
+  ['Андрій', 'Andrii'],
+  ['Борщагівка', 'Borshchahivka'],
+  ['Борисенко', 'Borysenko'],
+  ['Вінниця', 'Vinnytsia'],
+  ['Володимир', 'Volodymyr'],
+  ['Гадяч', 'Hadiach'],
+  ['Згурський', 'Zghurskyi'],
+  ['Ґалаґан', 'Galagan'],
+  ['Ґорґани', 'Gorgany'],
+  ['Донецьк', 'Donetsk'],
+  ['Олег', 'Oleh'],
+  ['Есмань', 'Esman'],
+  ['Єнакієве', 'Yenakiieve'],
+  ['Гаєвич', 'Haievych'],
+  ['Короп\'є', 'Koropie'],
+  ['Житомир', 'Zhytomyr'],
+  ['Закарпаття', 'Zakarpattia'],
+  ['Михайленко', 'Mykhailenko'],
+  ['Іващенко', 'Ivashchenko'],
+  ['Їжакевич', 'Yizhakevych'],
+  ['Кадиївка', 'Kadyivka'],
+  ['Мар\'їне', 'Marine'],
+  ['Йосипівка', 'Yosypivka'],
+  ['Стрий', 'Stryi'],
+  ['Олексій', 'Oleksii'],
+  ['Київ', 'Kyiv'],
+  ['Леонід', 'Leonid'],
+  ['Миколаїв', 'Mykolaiv'],
+  ['Наталія', 'Nataliia'],
+  ['Онищенко', 'Onyshchenko'],
+  ['Решетилівка', 'Reshetylivka'],
+  ['Рибчинський', 'Rybchynskyi'],
+  ['Соломія', 'Solomiia'],
+  ['Троць', 'Trots'],
+  ['Ужгород', 'Uzhhorod'],
+  ['Христина', 'Khrystyna'],
+  ['Біла Церква', 'Bila Tserkva'],
+  ['Чернівці', 'Chernivtsi'],
+  ['Кишеньки', 'Kyshenky'],
+  ['Щербухи', 'Shcherbukhy'],
+  ['Гоща', 'Hoshcha'],
+  ['Гаращенко', 'Harashchenko'],
+  ['Юрій', 'Yurii'],
+  ['Корюківка', 'Koriukivka'],
+  ['Яготин', 'Yahotyn'],
+  ['Ярошенко', 'Yaroshenko'],
+  ['Знам\'янка', 'Znamianka'],
+  ['Феодосія', 'Feodosiia']
+];
+
+function test() {
+  for (var i in testWords) {
+    console.assert(
+      translit(testWords[i][0]) === testWords[i][1],
+      testWords[i][0], "->", testWords[i][1]
+    );
+  }
+}

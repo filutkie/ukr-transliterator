@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Українська транслітерація",
+  "version": "1.0",
+
+  "description": "Транслітератор з української до латиниці за постановою КМУ від 2010 року",
+  "homepage_url": "https://github.com/filutkie/ukr-transliterator",
+  "icons": {
+    "72": "icons/icon-72.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/icon-36.png",
+    "default_title": "Українська транслітерація",
+    "default_popup": "popup/transliterator.html"
+  }
+}
